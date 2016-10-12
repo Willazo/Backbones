@@ -1,4 +1,21 @@
-Puls3.Views.ArticleView = Backbone.View.extend({
+Puls3.Views.Article = Backbone.View.extend({
+	tagName : "article",
+	classname : "post",
+	initialize : function(){
+		//	debugger;
+		//render de _.template
+		this.template = _.template( $('#article-template').html() );
+		//ebder de swig
+		//this.template = swig.compile( $('#article-template').html() );
+	},
+	render : function () {
+		var data = this.model.toJSON();
+		//junto data con el template
+		var html = this.template(data);
+		this.$el.html( html );
+	}
+});
+/*Puls3.Views.ArticleView = Backbone.View.extend({
 	events:{
 		"click > article" : "navigate",
 		"click .likes_up" : "upvote",
@@ -64,4 +81,4 @@ Puls3.Views.ArticleView = Backbone.View.extend({
 
 		return this;
 	}
-});
+});*/
