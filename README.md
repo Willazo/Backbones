@@ -1,20 +1,9 @@
-puls4
-=====
-
-Web app de la clase profesional de front-end de mejorando.la
-
+Aprendiendo a usar Bakcbones
+-----------------------------
 Install
 
-	npm install 
+npm install 
 
 Run server
 
-	node server
-
-### Interesting links
-
-[Backbone](backbonejs.org)
-
-[Tutorial de backbone](https://github.com/addyosmani/backbone-fundamentals/blob/gh-pages/backbone-fundamentals.md)
-
-[Grunt.js](http://gruntjs.com/getting-started)
+node server
